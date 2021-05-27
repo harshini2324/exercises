@@ -10,10 +10,11 @@ public class TrafficLight {
 		
 		//System.out.println("Traffic Lights");
 		System.out.println("Select any color");
+		System.out.println(radioButton());
+	}
+		private static int radioButton() throws IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		String color=br.readLine();
-		//int color=Integer.parseInt(l);
-		
 		switch(color) {
 		case "red":
 			System.out.println("stop");
@@ -27,8 +28,9 @@ public class TrafficLight {
 		default:System.out.println("");
 	    
 	    
-	    
-		}	
+		}
+		return 0;
+		
 			 
 
 	}
