@@ -1,19 +1,21 @@
 package LabAssigment1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class calculateDifference {
-public static void main(String[] args) {
-		
-		Scanner scanner = new Scanner(System.in);
-		int userInput, sumOfTheSquare = 0, squareOfTheSum = 0, totalDifference = 0,sumNum=0;
+public static void main(String[] args) throws IOException {
+	System.out.println("Please enter the value : ");
+	
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	String l=br.readLine();
+	int userInput=Integer.parseInt(l);
+		int  sumOfTheSquare = 0, squareOfTheSum = 0, totalDifference = 0,sumNum=0;
 		
 		System.out.println("----------A program to find the difference between the sum of the squares of the first n natural numbers and the square of their sum----------");
 		System.out.println("");
-		System.out.println("Please enter the value : ");
 		
-		userInput = scanner.nextInt();
-		scanner.close();
 		
 		if(userInput>=1) {
 			

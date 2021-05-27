@@ -1,14 +1,17 @@
 package LabAssigment1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class PrimeNumber {
-	public static void main(String arg[])	
+	public static void main(String arg[]) throws IOException	
 	{
 	int i,count;
                System.out.print("Enter n value : ");
-	Scanner sc=new Scanner(System.in);
-	int n=sc.nextInt();
+               BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+       		String l=br.readLine();
+       		int n=Integer.parseInt(l);
                System.out.println("Prime numbers between 1 to "+n+" are ");
 	for(int j=2;j<=n;j++)
 	{
@@ -22,6 +25,6 @@ public class PrimeNumber {
 	}
 	if(count==2)
 	       System.out.print(j+"  ");     
-	}sc.close();
+	}
 	}
 }
